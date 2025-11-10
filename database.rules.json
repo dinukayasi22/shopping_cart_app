@@ -1,0 +1,34 @@
+{
+  "rules": {
+    "items": {
+      ".read": true,
+      ".write": true
+    },
+    "scanned_items": {
+      ".read": true,
+      ".write": true
+    },
+    "items_catalog": {
+      ".read": true,
+      ".write": true
+    },
+    "active_cart": {
+      ".read": true,
+      ".write": false
+    },
+    "carts": {
+      "$cartId": {
+        ".read": true,
+        ".write": true,
+        ".validate": "newData.hasChildren(['id', 'items', 'totalAmount', 'status'])"
+      }
+    },
+    "payments": {
+      "$paymentId": {
+        ".read": true,
+        ".write": true
+      }
+    }
+  }
+}
+
