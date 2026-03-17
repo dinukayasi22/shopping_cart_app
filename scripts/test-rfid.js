@@ -14,14 +14,7 @@ const { getDatabase, ref, get, query, orderByChild, equalTo } = require('firebas
 
 // Firebase configuration (same as in the app)
 const firebaseConfig = {
-  apiKey: "AIzaSyAmxaaJQMT_orMv_UmcV83ZZ0_nsNibCis",
-  authDomain: "webapp-d9035.firebaseapp.com",
-  databaseURL: "https://webapp-d9035-default-rtdb.firebaseio.com",
-  projectId: "webapp-d9035",
-  storageBucket: "webapp-d9035.firebasestorage.app",
-  messagingSenderId: "589836440804",
-  appId: "1:589836440804:web:ea0ddd81770a5637b988f1",
-  measurementId: "G-WLKX39FMGD"
+
 };
 
 // Initialize Firebase
